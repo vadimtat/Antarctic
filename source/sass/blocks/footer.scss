@@ -1,0 +1,19 @@
+.footer {
+  padding: 0 var(--side-offset, 20px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #011C40;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 40px;
+}
+
+.footer-logo__icon {
+  display: block;
+}

@@ -1,0 +1,19 @@
+.information {
+  padding: 0 var(--side-offset, 20px);
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.information__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information__description {
+  max-width: 520px;
+}
+
+.information__images {}
+
+.information__image {}

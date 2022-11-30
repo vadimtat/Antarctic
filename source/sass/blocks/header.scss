@@ -1,0 +1,11 @@
+.header {
+  padding: 0 var(--side-offset, 20px);
+  position: absolute;
+  width: 100%;
+}
+
+.header__row {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}

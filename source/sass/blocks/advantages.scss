@@ -1,0 +1,52 @@
+.advantages {
+  padding: 0 var(--side-offset, 20px);
+  background: rgb(100, 157, 201);
+  background-image: image-set(url("../img/form/formbackground.png") 1x,
+      url("../img/form/formbackground2x.png") 2x);
+  background-position: 25% 90%;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages__row h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  padding: 30px 30px 50px 30px;
+  max-width: 360px;
+  background: #F9FBFD;
+}
+
+.advantages__icon {}
+
+.advantages__item h3 {
+  margin: 25px 0 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #011C40;
+}
+
+.advantages__item p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #011C40;
+}

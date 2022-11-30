@@ -1,0 +1,17 @@
+.navigation__list {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation__item+.navigation__item {
+  margin-left: 33px;
+}
+
+.navigation__item a {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  align-items: center;
+  color: #F9FBFD;
+}
