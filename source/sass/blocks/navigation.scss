@@ -2,6 +2,7 @@
   margin: 0;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .navigation__item+.navigation__item {
@@ -14,4 +15,9 @@
   line-height: 20px;
   align-items: center;
   color: #F9FBFD;
+
+  @media (max-width: 1023px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

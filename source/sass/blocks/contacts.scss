@@ -12,6 +12,8 @@
 .contacts-description {
   padding-top: 75px;
   max-width: 500px;
+
+  @media (max-width: 1023px) {}
 }
 
 .contacts-description h3 {
@@ -40,4 +42,12 @@
 
 .contacts-description__icon {
   margin-right: 10px;
+}
+
+.contacts-map {
+  margin-right: 30px;
+
+  @media (max-width: 1023px) {
+    max-width: 324px;
+  }
 }

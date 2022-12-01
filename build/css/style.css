@@ -804,6 +804,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .navigation__item + .navigation__item {
@@ -840,6 +842,7 @@ button,
 
 .information__description {
   max-width: 520px;
+  margin-right: 30px;
 }
 
 .information__description h3 {
@@ -943,9 +946,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages__item {
@@ -1049,6 +1050,7 @@ button,
 .product-card--one {
   background-image: -webkit-image-set(url("../img/cardblock/card1/card1.png") 1x, url("../img/cardblock/card1/card1x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card1/card1.png") 1x, url("../img/cardblock/card1/card1x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card__name {
@@ -1221,36 +1223,43 @@ button,
 .product-card--two {
   background-image: -webkit-image-set(url("../img/cardblock/card2/card2.png") 1x, url("../img/cardblock/card2/card2x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card2/card2.png") 1x, url("../img/cardblock/card2/card2x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card--three {
   background-image: -webkit-image-set(url("../img/cardblock/card3/card3.png") 1x, url("../img/cardblock/card3/card3x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card3/card3.png") 1x, url("../img/cardblock/card3/card3x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card--four {
   background-image: -webkit-image-set(url("../img/cardblock/card4/card4.png") 1x, url("../img/cardblock/card4/card4x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card4/card4.png") 1x, url("../img/cardblock/card4/card4x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card--five {
   background-image: -webkit-image-set(url("../img/cardblock/card5/card5.png") 1x, url("../img/cardblock/card5/card5x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card5/card5.png") 1x, url("../img/cardblock/card5/card5x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card--six {
   background-image: -webkit-image-set(url("../img/cardblock/card6/card6.png") 1x, url("../img/cardblock/card6/card6x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card6/card6.png") 1x, url("../img/cardblock/card6/card6x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card--seven {
   background-image: -webkit-image-set(url("../img/cardblock/card7/card7.png") 1x, url("../img/cardblock/card7/card7x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card7/card7.png") 1x, url("../img/cardblock/card7/card7x2.png") 2x);
+  background-size: cover;
 }
 
 .product-card--eight {
   background-image: -webkit-image-set(url("../img/cardblock/card8/card8.png") 1x, url("../img/cardblock/card8/card8x2.png") 2x);
   background-image: image-set(url("../img/cardblock/card8/card8.png") 1x, url("../img/cardblock/card8/card8x2.png") 2x);
+  background-size: cover;
 }
 
 .form-name input {
@@ -1639,6 +1648,10 @@ button,
   margin-right: 10px;
 }
 
+.contacts-map {
+  margin-right: 30px;
+}
+
 .footer {
   padding: 0 var(--side-offset, 20px);
   padding-top: 50px;
@@ -1751,11 +1764,76 @@ button,
   .container {
     padding: 0 24px;
   }
+
+  .header-logo__svg {
+    width: 38px;
+    height: 20px;
+  }
+
+  .navigation__item a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .information__images {
+    min-width: 324px;
+  }
+
+  .main-block__row h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .main-block__row p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .advantages__list {
+    gap: 30px;
+  }
+
+  .product__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 648px;
+  }
+
+  .product-card {
+    max-width: 309px;
+  }
+
+  .feedback__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .feedback-ifo {
+    margin: 0;
+  }
+
+  .feedback-ifo h2 {
+    margin: 0 auto;
+  }
+
+  .feedback-ifo p {
+    margin: 0 auto;
+  }
+
+  .feedback-form {
+    margin: 0 auto;
+  }
+
+  .contacts-map {
+    max-width: 324px;
+  }
 }
 
 @media (max-width: 768px) {
   :root {
-    --side-offset: 25px;
+    --side-offset: 45px;
   }
 }
 

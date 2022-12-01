@@ -12,6 +12,7 @@
 
 .information__description {
   max-width: 520px;
+  margin-right: 30px;
 }
 
 .information__description h3 {
@@ -38,6 +39,10 @@
 
 .information__images {
   min-width: 560px;
+
+  @media (max-width: 1023px) {
+    min-width: 324px;
+  }
 }
 
 .information__image {}
