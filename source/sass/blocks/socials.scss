@@ -11,4 +11,7 @@
   list-style-type: none;
 }
 
-.socials__item {}
+.socials__item {
+  display: flex;
+  align-items: center;
+}

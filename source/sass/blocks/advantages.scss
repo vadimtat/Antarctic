@@ -1,18 +1,25 @@
 .advantages {
   padding: 0 var(--side-offset, 20px);
-  background: rgb(100, 157, 201);
-  background-image: image-set(url("../img/form/formbackground.png") 1x,
-      url("../img/form/formbackground2x.png") 2x);
-  background-position: 25% 90%;
+  padding-top: 110px;
+  padding-bottom: 116px;
+  background-color: #81bed1;
+  background-image: image-set(url("../img/advantages/advantagesbackground.png") 1x,
+      url("../img/advantages/advantagesbackgroundx2.png") 2x);
+  background-position: 20% 40%;
   background-size: cover;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  background-repeat: no-repeat;
 }
 
 .advantages__row h2 {
-  margin: 0;
-  margin-bottom: 60px;
+  margin: 0 0 49px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  display: block;
   text-align: center;
+  align-items: center;
+  color: #011C40;
 }
 
 .advantages__list {
@@ -32,7 +39,7 @@
 .advantages__icon {}
 
 .advantages__item h3 {
-  margin: 25px 0 20px 0;
+  margin: 12px 0 9px;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
