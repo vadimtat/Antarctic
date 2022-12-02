@@ -1,4 +1,25 @@
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav .navigation__list {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: 767px) {
+    border: none;
+    display: block;
+    width: 24px;
+    height: 14px;
+    background: inherit;
+    background-image: url("../img/burger.svg");
+    cursor: pointer;
+  }
 }

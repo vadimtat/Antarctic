@@ -1,5 +1,9 @@
 .socials {
   margin-left: auto;
+
+  @media (max-width: 767px) {
+    margin: 0;
+  }
 }
 
 .socials__list {
@@ -17,7 +21,6 @@
 
 .socials__item {
   display: flex;
-  // align-items: center;
 }
 
 .socials__icon--one {

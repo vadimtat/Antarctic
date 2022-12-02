@@ -7,6 +7,11 @@
       url("../img/main-block/mainblockbackground2x.png") 2x);
   background-position: 25% 90%;
   background-size: cover;
+
+  @media (max-width: 767px) {
+    padding-bottom: 165px;
+    padding-top: 176px;
+  }
 }
 
 .main-block__row h1 {
@@ -22,6 +27,11 @@
     margin: 0;
     font-size: 50px;
     line-height: 61px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 125%;
   }
 }
 
@@ -39,5 +49,11 @@
     margin-left: 0;
     font-size: 18px;
     line-height: 22px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 140%;
   }
 }

@@ -12,6 +12,12 @@
 .footer__row {
   display: flex;
   align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-logo__icon {
@@ -28,5 +34,19 @@
 .footer a {
   @media (max-width: 1023px) {
     font-size: 12px;
+  }
+}
+
+.footer .navigation__list {
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.footer .navigation__item {
+  @media (max-width: 767px) {
+    margin-left: 0;
   }
 }
