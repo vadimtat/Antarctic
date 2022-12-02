@@ -9,9 +9,37 @@
   width: 106px;
   justify-content: space-between;
   list-style-type: none;
+
+  @media (max-width: 1023px) {
+    width: 87px;
+  }
 }
 
 .socials__item {
   display: flex;
-  align-items: center;
+  // align-items: center;
+}
+
+.socials__icon--one {
+  @media (max-width: 1023px) {
+    display: block;
+    width: 9.64px;
+    height: 16px;
+  }
+}
+
+.socials__icon--two {
+  @media (max-width: 1023px) {
+    display: block;
+    width: 16.42px;
+    height: 16px;
+  }
+}
+
+.socials__icon--three {
+  @media (max-width: 1023px) {
+    display: block;
+    width: 16.42px;
+    height: 16px;
+  }
 }

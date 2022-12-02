@@ -806,6 +806,7 @@ button,
   list-style-type: none;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .navigation__item + .navigation__item {
@@ -916,7 +917,7 @@ button,
 .advantages {
   padding: 0 var(--side-offset, 20px);
   padding-top: 110px;
-  padding-bottom: 116px;
+  padding-bottom: 120px;
   background-color: #81bed1;
   background-image: -webkit-image-set(url("../img/advantages/advantagesbackground.png") 1x, url("../img/advantages/advantagesbackgroundx2.png") 2x);
   background-image: image-set(url("../img/advantages/advantagesbackground.png") 1x, url("../img/advantages/advantagesbackgroundx2.png") 2x);
@@ -950,7 +951,7 @@ button,
 }
 
 .advantages__item {
-  padding: 30px 30px 50px 30px;
+  padding: 30px 30px 46px 30px;
   max-width: 360px;
   background: #F9FBFD;
 }
@@ -1670,6 +1671,7 @@ button,
 
 .footer-logo__icon {
   display: block;
+  margin-right: 40px;
 }
 
 .socials {
@@ -1693,9 +1695,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .main-nav {
@@ -1765,9 +1764,18 @@ button,
     padding: 0 24px;
   }
 
+  .header__row {
+    margin-top: 25px;
+  }
+
   .header-logo__svg {
+    margin-top: 4px;
     width: 38px;
     height: 20px;
+  }
+
+  .navigation__item + .navigation__item {
+    margin-left: 24px;
   }
 
   .navigation__item a {
@@ -1775,22 +1783,112 @@ button,
     line-height: 17px;
   }
 
+  .information {
+    padding-top: 80px;
+    padding-bottom: 93px;
+  }
+
+  .information__row {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .information__description {
+    margin-right: 25px;
+  }
+
+  .information__description h3 {
+    max-width: 210px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  .information__description p {
+    margin: 15px 0 0;
+  }
+
   .information__images {
     min-width: 324px;
+    margin-right: 5px;
+    margin-top: 9px;
   }
 
   .main-block__row h1 {
+    margin: 0;
     font-size: 50px;
     line-height: 61px;
   }
 
   .main-block__row p {
+    margin-left: 0;
     font-size: 18px;
     line-height: 22px;
   }
 
+  .advantages {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__row h2 {
+    font-size: 26px;
+  }
+
   .advantages__list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 26px 20px 25px 20px;
+    max-width: 206px;
+  }
+
+  .advantages__item:nth-child(1) {
+    padding: 26px 16px 21px 20px;
+  }
+
+  .advantages__item:nth-child(3) {
+    padding: 26px 16px 21px 20px;
+  }
+
+  .advantages__item h3 {
+    margin: 19px 0 11px;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .advantages__icon--one {
+    display: block;
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__icon--two {
+    display: block;
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__icon--three {
+    display: block;
+    width: 36px;
+    height: 26px;
+  }
+
+  .product {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  .product h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
   }
 
   .product__list {
@@ -1800,7 +1898,21 @@ button,
   }
 
   .product-card {
+    padding: 26px 35px;
     max-width: 309px;
+  }
+
+  .product-card:hover {
+    padding: 28px 35px 35px 35px;
+  }
+
+  .product-card__button {
+    max-width: 239px;
+  }
+
+  .feedback {
+    padding-top: 88px;
+    padding-bottom: 100px;
   }
 
   .feedback__row {
@@ -1815,19 +1927,72 @@ button,
   }
 
   .feedback-ifo h2 {
+    font-size: 34px;
     margin: 0 auto;
   }
 
   .feedback-ifo p {
+    text-align: center;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   .feedback-form {
     margin: 0 auto;
+    margin-top: 52px;
+  }
+
+  .contacts {
+    padding-bottom: 103px;
+  }
+
+  .contacts-description {
+    padding-top: 47px;
+  }
+
+  .contacts-description h3 {
+    text-align: start;
+    margin: 0px 0 28px;
   }
 
   .contacts-map {
     max-width: 324px;
+  }
+
+  .footer {
+    padding-top: 47px;
+  }
+
+  .footer-logo__icon {
+    width: 38px;
+    height: 20px;
+    margin-right: 25px;
+  }
+
+  .footer a {
+    font-size: 12px;
+  }
+
+  .socials__list {
+    width: 87px;
+  }
+
+  .socials__icon--one {
+    display: block;
+    width: 9.64px;
+    height: 16px;
+  }
+
+  .socials__icon--two {
+    display: block;
+    width: 16.42px;
+    height: 16px;
+  }
+
+  .socials__icon--three {
+    display: block;
+    width: 16.42px;
+    height: 16px;
   }
 }
 

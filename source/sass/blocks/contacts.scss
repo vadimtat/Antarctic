@@ -2,6 +2,10 @@
   padding: 0 var(--side-offset, 20px);
   padding-top: 120px;
   padding-bottom: 113px;
+
+  @media (max-width: 1023px) {
+    padding-bottom: 103px;
+  }
 }
 
 .contacts__row {
@@ -13,7 +17,9 @@
   padding-top: 75px;
   max-width: 500px;
 
-  @media (max-width: 1023px) {}
+  @media (max-width: 1023px) {
+    padding-top: 47px;
+  }
 }
 
 .contacts-description h3 {
@@ -26,6 +32,11 @@
   line-height: 150%;
   align-items: center;
   color: #011C40;
+
+  @media (max-width: 1023px) {
+    text-align: start;
+    margin: 0px 0 28px;
+  }
 }
 
 .contacts-description p {
