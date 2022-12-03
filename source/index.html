@@ -16,30 +16,33 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__row">
-        <div class="header-logo">
+        <div class="header-logo header-logo--active">
           <svg class="header-logo__svg" width="70" height="38" fill="none">
             <use href="img/sprite.svg#logo"></use>
           </svg>
         </div>
-        <div class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <nav class="navigation">
+        <button class="main-nav__toggle" type="button"><span></span></button>
+        <nav class="main-nav main-nav--nojs">
+          <svg class="main-nav__logo" width="42" height="22" fill="none">
+            <use href="img/sprite.svg#iconnavi"></use>
+          </svg>
+          <div class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#">Преимущества </a>
+                <a data-goto=".advantages" class="navigation__link" href="#">Преимущества </a>
               </li>
               <li class="navigation__item">
-                <a href="#">Направления</a>
+                <a data-goto=".product" class="navigation__link" href="#">Направления</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Ближайшие круизы</a>
+                <a data-goto=".product" class="navigation__link" href="#">Ближайшие круизы</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Контакты</a>
+                <a data-goto=".contacts" class="navigation__link" href="#">Контакты</a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main>

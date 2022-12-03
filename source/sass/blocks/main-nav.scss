@@ -2,24 +2,109 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    right: -100%;
+    min-height: 568px;
+    width: 285px;
+    background-color: #F9FBFD;
+    align-items: flex-start;
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+  }
 }
 
 .main-nav .navigation__list {
   @media (max-width: 767px) {
-    display: none;
+    display: block;
   }
 }
 
 .main-nav__toggle {
-  display: none;
+  border: none;
+  background: none;
+}
 
+.main-nav__logo {
   @media (max-width: 767px) {
-    border: none;
     display: block;
+    position: absolute;
+  }
+}
+
+.main-nav__row {
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
     width: 24px;
-    height: 14px;
-    background: inherit;
-    background-image: url("../img/burger.svg");
+    height: 18px;
     cursor: pointer;
+    z-index: 5;
+  }
+
+  .main-nav__toggle span,
+  .main-nav__toggle::before,
+  .main-nav__toggle::after {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    transition: all 0.3s ease 0s;
+    background-color: #ffffff;
+  }
+
+  .main-nav__toggle::before,
+  .main-nav__toggle::after {
+    content: "";
+  }
+
+  .main-nav__toggle::before {
+    left: 0;
+    top: 0;
+  }
+
+  .main-nav__toggle::after {
+    left: 0;
+    bottom: 0;
+  }
+
+  .main-nav__toggle span {
+    left: 0;
+    top: 50%;
+    transform: scale(1) translate(0px -50%);
+  }
+
+  .main-nav.main-nav--active {
+    right: 0;
+  }
+
+  .main-nav__toggle.main-nav__toggle--active span {
+    background: #011C40;
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .main-nav__toggle.main-nav__toggle--active::before {
+    width: 70%;
+    left: 10%;
+    top: 50%;
+    background: #011C40;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .main-nav__toggle.main-nav__toggle--active::after {
+    left: 10%;
+    width: 70%;
+    bottom: 50%;
+    background: #011C40;
+    transform: rotate(45deg) translate(0px, 50%);
   }
 }
