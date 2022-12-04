@@ -1,11 +1,11 @@
-const iconMenu = document.querySelector('.main-nav__toggle');
+const iconMenu = document.querySelector('.header-toggle');
 const menuBody = document.querySelector('.main-nav');
 const headerLogo = document.querySelector('.header-logo');
 menuBody.classList.remove('main-nav--nojs');
 
 if (iconMenu) {
   iconMenu.addEventListener('click', function (e) {
-    iconMenu.classList.toggle('main-nav__toggle--active');
+    iconMenu.classList.toggle('header-toggle--active');
     menuBody.classList.toggle('main-nav--active');
     headerLogo.classList.toggle('header-logo--active');
     e.preventDefault();
@@ -24,8 +24,8 @@ function onMenuLinkClick(e) {
   if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
     gotoBlock.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
-    if (iconMenu.classList.contains('main-nav__toggle--active')) {
-      iconMenu.classList.remove('main-nav__toggle--active');
+    if (iconMenu.classList.contains('header-toggle--active')) {
+      iconMenu.classList.remove('header-toggle--active');
       menuBody.classList.remove('main-nav--active');
       headerLogo.classList.add('header-logo--active');
     }
