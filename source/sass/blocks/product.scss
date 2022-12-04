@@ -21,7 +21,7 @@
   line-height: 150%;
   display: block;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
   text-align: center;
 
   @media (max-width: 1023px) {
@@ -78,8 +78,8 @@
 
   &:hover {
     justify-content: flex-start;
-    background: #011C40;
-    box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+    background: #011c40;
+    box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
     padding: 28px 25px 35px 25px;
     cursor: pointer;
 
@@ -115,7 +115,7 @@
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .product-card__route {
@@ -131,8 +131,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #F9FBFD;
-
+  color: #f9fbfd;
 }
 
 .product-card__route p {
@@ -141,7 +140,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #D8D8D9;
+  color: #d8d8d9;
   margin: 0;
 }
 
@@ -157,7 +156,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .product-card__port p {
@@ -167,7 +166,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #D8D8D9;
+  color: #d8d8d9;
 }
 
 .product-card__duration {
@@ -182,7 +181,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .product-card__duration p {
@@ -193,7 +192,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #D8D8D9;
+  color: #d8d8d9;
 }
 
 .product-card__price {
@@ -208,7 +207,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .product-card__price p {
@@ -218,7 +217,7 @@
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #D8D8D9;
+  color: #d8d8d9;
 }
 
 .product-card__button {
@@ -232,12 +231,17 @@
   font-size: 14px;
   line-height: 150%;
   align-items: center;
-  color: #011C40;
-  background: #F9FBFD;
+  color: #011c40;
+  background: #f9fbfd;
   display: none;
 
   @media (max-width: 1023px) {
     max-width: 239px;
+  }
+
+  &:hover {
+    background-color: #0054c2;
+    color: #ffffff;
   }
 }
 

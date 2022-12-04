@@ -2,10 +2,10 @@
   --side-offset: calc(50vw - 580px);
 
   @media (max-width: (1160px + 50px*2)) {
-    --side-offset: 50px;
+    --side-offset: 45px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     --side-offset: 15px;
   }
 }
@@ -15,9 +15,11 @@
 
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  overflow-x: hidden;
 
   .header,
   .footer {

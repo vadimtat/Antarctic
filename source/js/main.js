@@ -1,7 +1,8 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { initMenu } from './modules/burger';
-
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {initMenu} from './modules/burger';
+import {initForms} from './modules/valid';
+import {initMaskPhone} from './modules/mask';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initMenu();
+  initForms();
+  initMaskPhone();
 
   // Modules
   // ---------------------------------

@@ -69,9 +69,9 @@
   line-height: 130%;
   display: flex;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding-left: 28px;
     margin-top: 18px;
     margin-bottom: 27px;
@@ -93,10 +93,16 @@
   line-height: 150%;
   display: block;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: #0054c2;
+    color: #ffffff;
   }
 }
 
@@ -115,19 +121,19 @@
   transition: 300ms;
   cursor: pointer;
 
-  @media (max-width: 1023px) {}
-
-  @media (max-width: 768px) {}
-
   &:hover {
     box-shadow: 0 0 1px 1px #041827;
   }
 }
 
-.form-checkbox input[type="checkbox"]:checked+.form-mark {
+.form-checkbox input[type="checkbox"]:checked + .form-mark {
   background-image: url("../img/checkbox2.svg");
 }
 
-.form-checkbox input[type="checkbox"]:focus+.form-mark {
+.form-checkbox input[type="checkbox"]:focus + .form-mark {
   outline: auto;
+}
+
+.form__error {
+  box-shadow: 0 0 2px 2px #ff0000;
 }

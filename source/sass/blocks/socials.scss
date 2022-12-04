@@ -3,6 +3,7 @@
 
   @media (max-width: 767px) {
     margin: 0;
+    margin-top: 28px;
   }
 }
 
@@ -10,17 +11,26 @@
   margin: 0;
   padding: 0;
   display: flex;
-  width: 106px;
-  justify-content: space-between;
+  width: 120px;
   list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
-  @media (max-width: 1023px) {
-    width: 87px;
+  @media (max-width: 767px) {
+    justify-content: flex-start;
   }
 }
 
-.socials__item {
+.socials__item a {
   display: flex;
+}
+
+.socials__item + .socials__item {
+  margin-left: 28px;
+
+  @media (max-width: 1023px) {
+    margin-left: 22px;
+  }
 }
 
 .socials__icon--one {
@@ -28,6 +38,14 @@
     display: block;
     width: 9.64px;
     height: 16px;
+  }
+}
+
+.socials__icon {
+  fill: #f9fbfd;
+
+  &:hover {
+    fill: #0080ff;
   }
 }
 

@@ -48,7 +48,7 @@
   font-size: 28px;
   line-height: 150%;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
 
   @media (max-width: 1023px) {
     max-width: 210px;
@@ -72,13 +72,11 @@
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
 
   @media (max-width: 1023px) {
     margin: 15px 0 0;
   }
-
-  @media (max-width: 767px) {}
 }
 
 .information__images {
@@ -95,5 +93,3 @@
     min-width: 290px;
   }
 }
-
-.information__image {}
