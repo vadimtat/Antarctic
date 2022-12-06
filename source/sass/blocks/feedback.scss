@@ -2,6 +2,7 @@
   padding: 0 var(--side-offset, 20px);
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #8ab4ff;
   background-image: image-set(url("../img/form/formbackground.png") 1x,
       url("../img/form/formbackground2x.png") 2x);
   background-size: cover;
@@ -28,7 +29,7 @@
   }
 }
 
-.feedback-ifo {
+.feedback__ifo {
   margin-left: 60px;
   max-width: 500px;
 
@@ -37,7 +38,7 @@
   }
 }
 
-.feedback-ifo h2 {
+.feedback__ifo h2 {
   margin: 0;
   font-style: normal;
   font-weight: 700;
@@ -60,7 +61,7 @@
   }
 }
 
-.feedback-ifo p {
+.feedback__ifo p {
   margin: 0;
   max-width: 352px;
   font-weight: 400;
@@ -84,7 +85,7 @@
   }
 }
 
-.feedback-form {
+.feedback__form {
   margin-right: 60px;
   padding: 44px 50px 50px;
   width: 100%;
@@ -104,7 +105,7 @@
   }
 }
 
-.feedback-form h3 {
+.feedback__form h3 {
   margin: 0;
   margin-bottom: 27px;
   font-weight: 500;
