@@ -1199,12 +1199,12 @@ button,
   align-items: center;
 }
 
-.feedback__ifo {
+.feedback__info {
   margin-left: 60px;
   max-width: 500px;
 }
 
-.feedback__ifo h2 {
+.feedback__info h2 {
   margin: 0;
   font-style: normal;
   font-weight: 700;
@@ -1219,7 +1219,7 @@ button,
   color: #011c40;
 }
 
-.feedback__ifo p {
+.feedback__info p {
   margin: 0;
   max-width: 352px;
   font-weight: 400;
@@ -1903,16 +1903,16 @@ button,
     flex-direction: column;
   }
 
-  .feedback__ifo {
+  .feedback__info {
     margin: 0;
   }
 
-  .feedback__ifo h2 {
+  .feedback__info h2 {
     font-size: 34px;
     margin: 0 auto;
   }
 
-  .feedback__ifo p {
+  .feedback__info p {
     text-align: center;
     margin: 0 auto;
     margin-top: 5px;
@@ -2258,14 +2258,14 @@ button,
     padding-top: 59px;
   }
 
-  .feedback__ifo h2 {
+  .feedback__info h2 {
     text-align: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 130%;
   }
 
-  .feedback__ifo p {
+  .feedback__info p {
     margin: 0;
     margin-top: 14px;
     font-size: 16px;
