@@ -3,13 +3,14 @@
   padding-top: 270px;
   padding-bottom: 258px;
   background-color: #71b2fb;
-  background-image: image-set(url("../img/main-block/mainblockbackground.png") 1x,
-      url("../img/main-block/mainblockbackground2x.png") 2x);
+  background-image: image-set(url("../img/main-block/mainblockbackground.jpg") 1x,
+      url("../img/main-block/mainblockbackground2x.jpg") 2x);
   box-shadow: (0 4px 4px rgba(0, 0, 0, 0.25));
   background-position: 25% 90%;
   background-size: cover;
 
   @media (max-width: 1023px) {
+    padding-bottom: 255px;
     box-shadow: none;
   }
 

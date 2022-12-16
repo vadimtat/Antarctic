@@ -4,7 +4,7 @@
   padding-bottom: 145px;
 
   @media (max-width: 1023px) {
-    padding-top: 88px;
+    padding-top: 91px;
     padding-bottom: 93px;
   }
 
@@ -37,6 +37,7 @@
   }
 
   @media (max-width: 767px) {
+    margin: 0 auto;
     min-width: 290px;
   }
 }
@@ -89,6 +90,7 @@
   }
 
   @media (max-width: 767px) {
+    margin: 0 auto;
     margin-top: 44px;
     min-width: 290px;
   }

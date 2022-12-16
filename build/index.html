@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -23,24 +23,32 @@
         </div>
         <button class="header__toggle" type="button"><span></span></button>
         <nav class="main-nav main-nav--nojs">
-          <svg class="main-nav__logo" width="42" height="22" fill="none">
-            <use href="img/sprite.svg#iconnavi"></use>
-          </svg>
-          <div class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#advantages">Преимущества </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#product">Направления</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#product">Ближайшие круизы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
+          <div class="main-nav__wrapper">
+            <div class="main-nav__overlay">
+              <div class="main-nav__content">
+                <a href="#">
+                  <svg class="main-nav__logo" width="42" height="22" fill="none">
+                    <use href="img/sprite.svg#iconnavi"></use>
+                  </svg>
+                </a>
+                <div class="navigation">
+                  <ul class="navigation__list">
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#advantages">Преимущества </a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#product">Направления</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#product">Ближайшие круизы</a>
+                    </li>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#contacts">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
@@ -67,7 +75,7 @@
               <source
                 srcset=" ./img/information/informationimage.png 1x, ./img/information/informationimage2x.png 2x, ./img/information/informationimage3x.png 3x">
               <img class="information__image" src="./img/information/informationimage.png" alt="пингвинчики" width="560"
-                height="301">
+                height="301" loading="lazy">
             </picture>
           </div>
         </div>
@@ -96,7 +104,7 @@
               <svg class="advantages__icon advantages__icon--three" width="44" height="32" fill="none">
                 <use href="img/sprite.svg#ship"></use>
               </svg>
-              <h3>Экскурсионные туры на Zodiac</h3>
+              <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
               <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiack
                 c&nbsp;опытными экскурсоводами.</p>
             </li>
@@ -106,7 +114,7 @@
       <section class="product" id="product">
         <h2>Ближайшие круизы</h2>
         <div class="product__list">
-          <div class="product-card product-card--one">
+          <div class="product-card product-card--one" tabindex="0">
             <h3 class="product-card__name">Круиз “Астория”</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -126,7 +134,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--two">
+          <div class="product-card product-card--two" tabindex="0">
             <h3 class="product-card__name">Круиз “Элайн</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -146,7 +154,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--three">
+          <div class="product-card product-card--three" tabindex="0">
             <h3 class="product-card__name">Круиз "Атлантис"</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -166,7 +174,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--four">
+          <div class="product-card product-card--four" tabindex="0">
             <h3 class="product-card__name">Круиз "Одиссей"</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -186,7 +194,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--five">
+          <div class="product-card product-card--five" tabindex="0">
             <h3 class="product-card__name">Круиз "Олимпия"</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -206,7 +214,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--six">
+          <div class="product-card product-card--six" tabindex="0">
             <h3 class="product-card__name">Круиз "Аврора"</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -226,7 +234,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--seven">
+          <div class="product-card product-card--seven" tabindex="0">
             <h3 class="product-card__name">Круиз "Леонор"</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -246,7 +254,7 @@
             </div>
             <a class="product-card__button" href="#">Забронировать</a>
           </div>
-          <div class="product-card product-card--eight">
+          <div class="product-card product-card--eight" tabindex="0">
             <h3 class="product-card__name">Круиз "Минион - 1"</h3>
             <div class="product-card__route">
               <h4>Маршрут</h4>
@@ -278,13 +286,12 @@
           <div class="feedback__form">
             <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
             <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-            <input aria-label="Имя" type="text" name="name" placeholder="Имя" required>
-            <input aria-label="Телефон" class="phone-us" type="tel" name="phone" placeholder="Телефон"
-                  required>
+              <input aria-label="Имя" type="text" name="name" placeholder="Имя" required>
+              <input aria-label="Телефон" class="phone-us" type="tel" name="phone" placeholder="Телефон" required>
               <input aria-label="Почта" type="email" name="email" placeholder="Email" required>
               <label class="form__checkbox">
-                <input type="checkbox" required>
-                <span class="form__mark"></span>Я согласен на обработку моих персональных
+                <input type="checkbox" tabindex="1" required>
+                <span class="form__mark" tabindex="0"></span>Я согласен на обработку моих персональных
                 данных</label>
               <button class="form__button" type="submit">Оставить заявку</button>
             </form>
@@ -301,10 +308,11 @@
                 <use href="img/sprite.svg#point"></use>
               </svg>
               г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
-            <p><svg class="contacts__description-icon" width="18" height="18" fill="none">
+            <a href="tel:+88002000000"><svg class="contacts__description-icon" width="18" height="18" fill="none">
                 <use href="img/sprite.svg#phone"></use>
               </svg>
-              8-800-200-00-00</p>
+              8-800-200-00-00
+            </a>
           </div>
         </div>
       </section>
@@ -312,9 +320,11 @@
     <footer class="footer">
       <div class="footer__row">
         <div class="footer__logo">
-          <svg class="footer__logo-icon" width="70" height="38" fill="none">
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
+          <a href="#">
+            <svg class="footer__logo-icon" width="70" height="38" fill="none">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
         </div>
         <div class="footer-navigation">
           <ul class="footer-navigation__list">
@@ -387,9 +397,9 @@
       </div>
     </div>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=9af1ad55-da85-44ce-b2cb-9838afec7819&lang=ru_RU"></script>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9af1ad55-da85-44ce-b2cb-9838afec7819&lang=ru_RU" defer></script>
+  <script src="js/vendor.min.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 </body>
 
 </html>

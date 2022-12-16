@@ -1,21 +1,38 @@
 .product-card {
   width: 100%;
-  max-width: 260px;
-  min-height: 386px;
+  min-width: 260px;
+  height: 386px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 22px 30px;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow-y: auto;
+
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @media (max-width: 1023px) {
     padding: 26px 35px;
     max-width: 309px;
+    max-height: 386px;
+    width: 100%;
   }
 
   @media (max-width: 767px) {
     padding: 18px 25px;
+    max-width: none;
+    max-height: none ;
     width: 100%;
-    max-width: 270px;
+    height: 100%;
+    aspect-ratio: 270 / 386;
+    // height: calc(386px / (320px) * (100vw));
+    // margin: 0 auto;
   }
 
   &:hover {
@@ -23,7 +40,7 @@
     background: #011c40;
     box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
     padding: 28px 25px 35px 25px;
-    cursor: pointer;
+    cursor: default;
 
     @media (max-width: 1023px) {
       padding: 28px 35px 35px 35px;
@@ -32,6 +49,7 @@
     @media (max-width: 767px) {
       padding: 28px 25px 35px 25px;
     }
+
   }
 
   &:hover .product-card__route,
@@ -44,8 +62,9 @@
 }
 
 .product-card--one {
-  background-image: image-set(url("../img/cardblock/card1/card1.png") 1x,
-      url("../img/cardblock/card1/card1x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card1/card1.jpg") 1x,
+      url("../img/cardblock/card1/card1x2.jpg") 2x);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -163,6 +182,7 @@
 }
 
 .product-card__button {
+  margin: 0 auto;
   margin-top: auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -176,6 +196,7 @@
   color: #011c40;
   background: #f9fbfd;
   display: none;
+  cursor: pointer;
 
   @media (max-width: 1023px) {
     max-width: 239px;
@@ -188,43 +209,43 @@
 }
 
 .product-card--two {
-  background-image: image-set(url("../img/cardblock/card2/card2.png") 1x,
-      url("../img/cardblock/card2/card2x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card2/card2.jpg") 1x,
+      url("../img/cardblock/card2/card2x2.jpg") 2x);
   background-size: cover;
 }
 
 .product-card--three {
-  background-image: image-set(url("../img/cardblock/card3/card3.png") 1x,
-      url("../img/cardblock/card3/card3x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card3/card3.jpg") 1x,
+      url("../img/cardblock/card3/card3x2.jpg") 2x);
   background-size: cover;
 }
 
 .product-card--four {
-  background-image: image-set(url("../img/cardblock/card4/card4.png") 1x,
-      url("../img/cardblock/card4/card4x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card4/card4.jpg") 1x,
+      url("../img/cardblock/card4/card4x2.jpg") 2x);
   background-size: cover;
 }
 
 .product-card--five {
-  background-image: image-set(url("../img/cardblock/card5/card5.png") 1x,
-      url("../img/cardblock/card5/card5x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card5/card5.jpg") 1x,
+      url("../img/cardblock/card5/card5x2.jpg") 2x);
   background-size: cover;
 }
 
 .product-card--six {
-  background-image: image-set(url("../img/cardblock/card6/card6.png") 1x,
-      url("../img/cardblock/card6/card6x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card6/card6.jpg") 1x,
+      url("../img/cardblock/card6/card6x2.jpg") 2x);
   background-size: cover;
 }
 
 .product-card--seven {
-  background-image: image-set(url("../img/cardblock/card7/card7.png") 1x,
-      url("../img/cardblock/card7/card7x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card7/card7.jpg") 1x,
+      url("../img/cardblock/card7/card7x2.jpg") 2x);
   background-size: cover;
 }
 
 .product-card--eight {
-  background-image: image-set(url("../img/cardblock/card8/card8.png") 1x,
-      url("../img/cardblock/card8/card8x2.png") 2x);
+  background-image: image-set(url("../img/cardblock/card8/card8.jpg") 1x,
+      url("../img/cardblock/card8/card8x2.jpg") 2x);
   background-size: cover;
 }

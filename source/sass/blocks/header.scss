@@ -38,6 +38,13 @@
   }
 }
 
+.header__toggle {
+  display: none;
+  background: none;
+  border: none;
+
+}
+
 @media (max-width: 767px) {
   .header__toggle {
     display: block;
@@ -47,7 +54,7 @@
     width: 24px;
     height: 14px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 1001;
   }
 
   .header__toggle span,

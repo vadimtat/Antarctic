@@ -1,9 +1,8 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {initMenu} from './modules/burger';
-import {initForms} from './modules/valid';
-import {initMaskPhone} from './modules/mask';
-import {initMap} from './modules/map';
+import { initMenu } from './modules/burger';
+import { initForms } from './modules/valid';
+import { initMaskPhone } from './modules/mask';
+import { initMap } from './modules/map';
+// import { setScrollBarWidthToCSS } from './modules/scrollbar';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,21 +10,18 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  iosVhFix();
   initMenu();
   initForms();
   initMaskPhone();
   initMap();
-
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
+  // setScrollBarWidthToCSS();
 });
+// Modules
+// ---------------------------------
+
+// все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
+// в load следует добавить скрипты, не участвующие в работе первого экрана
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

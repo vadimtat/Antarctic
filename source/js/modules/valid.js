@@ -8,17 +8,14 @@ function initForm(form) {
   const phoneInput = form.querySelector('.phone-us');
 
   form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-
     const phone = phoneInput.value;
     const isValid = checkPhone(phone);
-
     if (isValid) {
       form.classList.remove('form__error');
       phoneInput.classList.remove('form__error');
     } else {
       phoneInput.classList.add('form__error');
+      event.preventDefault();
     }
   });
 
