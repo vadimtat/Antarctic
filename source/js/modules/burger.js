@@ -9,7 +9,7 @@ export function initMenu() {
   if (iconMenu) {
     iconMenu.addEventListener('click', toggleState);
   }
-  menuBody.addEventListener('click', ({ target }) => {
+  menuBody.addEventListener('click', ({target}) => {
     if (target.href) {
       toggleState();
     }

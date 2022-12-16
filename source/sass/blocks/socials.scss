@@ -21,16 +21,13 @@
   }
 }
 
-.socials__item {
-  padding: 5px 0;
-}
-
 .socials__item a {
   display: flex;
 }
 
 .socials__item {
   margin-right: 28px;
+  padding: 5px 0;
 
   @media (max-width: 1023px) {
     margin-right: 22px;

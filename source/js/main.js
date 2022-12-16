@@ -1,8 +1,7 @@
-import { initMenu } from './modules/burger';
-import { initForms } from './modules/valid';
-import { initMaskPhone } from './modules/mask';
-import { initMap } from './modules/map';
-// import { setScrollBarWidthToCSS } from './modules/scrollbar';
+import {initMenu} from './modules/burger';
+import {initForms} from './modules/valid';
+import {initMaskPhone} from './modules/mask';
+import {initMap} from './modules/map';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initForms();
   initMaskPhone();
   initMap();
-  // setScrollBarWidthToCSS();
 });
 // Modules
 // ---------------------------------

@@ -1148,7 +1148,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #011c40;
-  background: #F9FBFD;
+  background: #f9fbfd;
   cursor: pointer;
 }
 
@@ -1381,10 +1381,6 @@ button,
   justify-content: flex-start;
 }
 
-.socials__item {
-  padding: 5px 0;
-}
-
 .socials__item a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1393,6 +1389,7 @@ button,
 
 .socials__item {
   margin-right: 28px;
+  padding: 5px 0;
 }
 
 .socials__item:last-child {
@@ -2212,7 +2209,7 @@ button,
 
   .information {
     padding-bottom: 85px;
-    padding-top: 53px;
+    padding-top: 58px;
   }
 
   .information__row {
@@ -2239,7 +2236,7 @@ button,
   }
 
   .main-block {
-    padding-bottom: 165px;
+    padding-bottom: 161px;
     padding-top: 176px;
   }
 
@@ -2273,7 +2270,7 @@ button,
 
   .advantages__item {
     padding: 26px 20px 18px 20px;
-    max-width: 290px;
+    max-width: none;
     margin: 0 auto;
   }
 
@@ -2300,7 +2297,7 @@ button,
 
   .form__checkbox {
     padding-left: 28px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 7px;
     text-align: left;
     width: 100%;
@@ -2327,7 +2324,7 @@ button,
   }
 
   .contacts {
-    padding-bottom: 65px;
+    padding-bottom: 61px;
     padding-top: 58px;
   }
 
@@ -2367,7 +2364,7 @@ button,
   }
 
   .footer {
-    padding-top: 41px;
+    padding-top: 43px;
     padding-bottom: 40px;
   }
 
@@ -2395,9 +2392,6 @@ button,
   }
 
   .main-nav {
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
     position: fixed;
     top: 0;
     right: -100%;
@@ -2407,6 +2401,9 @@ button,
     background: rgba(0, 43, 102, 0.5);
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
 
   .main-nav__wrapper {
@@ -2443,7 +2440,7 @@ button,
     width: 285px;
     height: 100%;
     padding: 15px;
-    background: #F9FBFD;
+    background: #f9fbfd;
   }
 
   .main-nav .navigation__list {

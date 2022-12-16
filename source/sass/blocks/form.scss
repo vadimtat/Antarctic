@@ -44,7 +44,7 @@
 
   @media (max-width: 767px) {
     padding-left: 28px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 7px;
     text-align: left;
     width: 100%;
@@ -64,7 +64,7 @@
   display: block;
   align-items: center;
   color: #011c40;
-  background: #F9FBFD;
+  background: #f9fbfd;
   cursor: pointer;
 
   @media (max-width: 768px) {
@@ -97,7 +97,7 @@
   }
 }
 
-.form__checkbox input[type="checkbox"]:checked+.form__mark {
+.form__checkbox input[type="checkbox"]:checked + .form__mark {
   background-image: url("../img/checkbox2.svg");
 }
 

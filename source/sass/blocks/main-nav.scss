@@ -4,18 +4,6 @@
   justify-content: space-between;
 
   @media (max-width: 767px) {
-    // position: absolute;
-    // padding: 20px 16px;
-    // top: 0;
-    // right: -100%;
-    // min-height: 568px;
-    // width: 285px;
-    // background-color: #f9fbfd;
-    // align-items: flex-start;
-    transition: all 0.3s ease 0s;
-    // overflow: hidden;
-
-
     position: fixed;
     top: 0;
     right: -100%;
@@ -25,6 +13,7 @@
     background: rgba(0, 43, 102, 0.5);
     visibility: hidden;
     opacity: 0;
+    transition: all 0.3s ease 0s;
   }
 }
 
@@ -62,7 +51,7 @@
     width: 285px;
     height: 100%;
     padding: 15px;
-    background: #F9FBFD;
+    background: #f9fbfd;
   }
 }
 
