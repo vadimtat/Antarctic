@@ -619,6 +619,7 @@ button,
 }
 
 .scroll-lock {
+  position: fixed;
   overflow: hidden;
 }
 
@@ -2441,6 +2442,7 @@ button,
     height: 100%;
     padding: 15px;
     background: #f9fbfd;
+    overflow: auto;
   }
 
   .main-nav .navigation__list {
