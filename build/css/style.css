@@ -2472,6 +2472,8 @@ button,
 
   .main-nav.main-nav--nojs {
     right: 0;
+    visibility: visible;
+    opacity: 1;
   }
 
   .footer-navigation__list {
