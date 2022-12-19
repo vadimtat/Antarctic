@@ -2,6 +2,7 @@ import {initMenu} from './modules/burger';
 import {initForms} from './modules/valid';
 import {initMaskPhone} from './modules/mask';
 import {initMap} from './modules/map';
+import {hoverCard} from './modules/cardfocus';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initForms();
   initMaskPhone();
   initMap();
+  hoverCard();
 });
 // Modules
 // ---------------------------------

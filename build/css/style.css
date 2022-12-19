@@ -1324,7 +1324,7 @@ button,
 
 .contacts__description a {
   margin-top: 20px;
-  display: block;
+  display: inline-block;
 }
 
 .contacts__description a:hover {
